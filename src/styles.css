@@ -646,6 +646,13 @@ h2,
     max-width: 420px;
   }
 
+  /* Reducimos las fotos de las cartas en móvil
+     para que no dominen demasiado la pantalla */
+  .menu-photo {
+    width: 85%;
+    max-width: 320px;
+  }
+
   .menu-title {
     font-size: 1.6rem;
   }
