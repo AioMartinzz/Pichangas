@@ -133,7 +133,8 @@ const sections = [
 function App() {
   const handleWhatsApp = () => {
     const phone = WHATSAPP.replace(/[^0-9]/g, '');
-    const url = `https://wa.me/${phone}`;
+    const message = 'Hola, quisiera realizar un pedido';
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   };
 
