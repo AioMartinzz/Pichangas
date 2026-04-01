@@ -654,6 +654,12 @@ h2,
     font-size: 1.05rem;
   }
 
+  /* En móvil, desplazamos el texto de las tarjetas
+     un poco a la derecha para que quede sobre el fondo negro */
+  .menu-card-right {
+    padding-left: 2.6rem;
+  }
+
   .footer {
     flex-direction: column;
     gap: 0.75rem;
