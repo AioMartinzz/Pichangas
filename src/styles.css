@@ -646,6 +646,13 @@ h2,
     max-width: 420px;
   }
 
+  /* En móvil, suavizamos/difuminamos el rosado de las tarjetas
+     para que no compita con el texto. El rosa queda arriba y
+     el área de texto es mayoritariamente negra. */
+  .menu-card {
+    background: linear-gradient(180deg, #fbcfe8 0, #f9a8d4 30%, #050608 35%, #050608 100%);
+  }
+
   /* Reducimos las fotos de las cartas en móvil
      para que no dominen demasiado la pantalla */
   .menu-photo {
