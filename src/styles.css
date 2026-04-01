@@ -182,8 +182,8 @@ h2,
 }
 
 .content {
-  /* Reducimos el espacio superior para acercar el contenido al navbar */
-  padding: 1.2rem 3.5rem 4rem;
+  /* Espaciado fluido para que se vea bien en distintas anchuras */
+  padding: 1.2rem clamp(1.5rem, 4vw, 3.5rem) 4rem;
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -218,7 +218,8 @@ h2,
 }
 
 .hero h1 {
-  font-size: 3.2rem;
+  /* Tamaño de título fluido para desktop/tablet */
+  font-size: clamp(2.4rem, 3vw + 1.2rem, 3.4rem);
   line-height: 1.1;
   margin: 0 0 0.8rem;
   opacity: 0;
@@ -420,7 +421,7 @@ h2,
 }
 
 .menu-title {
-  font-size: 2.0rem;
+  font-size: clamp(1.6rem, 1.2vw + 1.4rem, 2rem);
   text-transform: uppercase;
   letter-spacing: 0.18em;
   margin: 0 0 0.9rem;
@@ -444,13 +445,13 @@ h2,
 
 .menu-item-name {
   font-weight: 700;
-  font-size: 1.40rem;
+  font-size: clamp(1.05rem, 0.6vw + 0.9rem, 1.4rem);
 }
 
 .menu-item-price {
   font-weight: 800;
   color: var(--price);
-  font-size: 1.40rem;
+  font-size: clamp(1.05rem, 0.6vw + 0.9rem, 1.4rem);
 }
 
 .menu-item-note {
